@@ -1,0 +1,47 @@
+
+/* [SEC]Actu =========================== */
+
+
+.actu 
+{
+    padding-top: 10rem;
+}
+
+.actu-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    margin: 17rem 10%;
+}
+
+.actu-item:nth-child(1)
+{
+    margin: 0rem 10%;
+}
+
+.actu .content 
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actu span
+{
+    color: var(--high-bg-color);
+    font-weight: bold;
+    
+}
+
+.actu p 
+{
+    font-family: 'Caveat';
+    font-size: 25px;
+    width: 50%;
+}
+
+/* ===================================== */

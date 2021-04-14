@@ -1,0 +1,218 @@
+body
+{
+    overflow-y: hidden;
+}
+
+
+/* Slide Effect ======================== */
+.container
+{
+    flex-direction: column;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.child
+{
+    padding-top: 80px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ===================================== */
+
+
+
+.notre-cabinet, .qui, .echo, .actu
+{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* [SEC]Notre Cabinet ================== */
+.notre-cabinet 
+{
+    background: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.resum-text 
+{
+    position: relative;
+    left: 530px;
+    top: 200px;
+
+    height: 450px;
+    width: 410px;
+
+    padding: 2rem 0 1rem 3rem;
+
+    background-color: var(--basic-color);
+    z-index: 2;
+}
+
+
+.resum-text h1
+{
+    margin-bottom: 1.5rem;
+}
+
+.resum-text p 
+{
+    font-family: 'Caveat';
+    width: 87%;
+    font-size: 23px;
+}
+
+.resum img
+{
+    width: 710px;
+    position: relative;
+    left: 770px;
+    bottom: 50px;
+}
+/* ===================================== */
+
+
+/* [SEC]Qui ============================ */
+.qui
+{
+    background: url(../img/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.qui h1
+{
+    padding-left: 20%;
+    padding-top: 3rem;
+}
+
+
+.wrapper-cards
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.profil-card
+{
+    position: relative;
+    background-color: var(--basic-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 4rem 7rem;
+    
+}
+
+.profil-card:nth-child(1)
+{
+    margin-right: 5%;
+}
+
+.profil-card .content 
+{
+    margin-left: 10%;
+}
+
+.profil-card p 
+{
+    font-family: 'Caveat';
+    font-size: 23px;
+    width: 400px;
+    margin: 3rem 0;
+}
+
+/* ===================================== */
+
+/* [SEC]Echo ============================ */
+
+.echo 
+{
+    background: url(../img/bg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.echo h1 
+{
+    padding-left: 10%;
+    padding-bottom: 8rem;
+}
+
+.echo h2 
+{
+    padding-bottom: 4rem;
+}
+
+.echo p 
+{
+    font-family: 'Caveat';
+    font-size: 25px;
+    width: 70%;
+}
+
+.echo ul 
+{
+    padding-left: 15px;
+}
+
+.echo li 
+{
+    margin: 1.5rem 0;
+}
+
+/* ===================================== */
+
+
+
+
+/* Responsive */
+@media (max-width: 1400px) 
+{
+    .navbar 
+    {
+        padding-left: 0;
+    }
+
+    .resum img
+    {
+        display: none;
+    }
+
+    .resum
+    {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resum-text
+    {
+        position: static;
+    }
+}

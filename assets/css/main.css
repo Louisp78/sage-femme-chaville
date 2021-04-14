@@ -1,0 +1,129 @@
+/* Variable ============================== */
+
+:root
+{
+    --main-bg-color: #C47254;
+    --title-color: #CD5D1E;
+    --subtitle-color: #F35800;
+    --high-bg-color: #FD9142;
+    --secondary-bg-color: #FAA593;
+    --basic-color: #EDEDED;
+}
+
+
+/* Dker Poster font */
+@font-face {font-family: "Dker"; src: url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.eot"); src: url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.woff") format("woff"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.svg#Dker") format("svg"); } 
+
+/* ======================================= */
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Nunito', sans-serif; /*Tahoma, Geneva, Verdana, sans-serif;*/
+}
+
+h1, h2, h3 
+{
+    font-family: 'Dker';
+    font-weight: 500;
+}
+
+h1 
+{
+    color: var(--title-color);
+    font-size: 40px;
+}
+
+h2 
+{
+    color: var(--subtitle-color);
+    font-size: 30px;
+}
+
+
+/* NavBar ========================= */
+.navbar 
+{
+    position: fixed;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: white;
+    width: 100%;
+    height: 80px;
+
+    z-index: 3;
+}
+
+.navbar ul
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li 
+{
+    margin: 0 2rem;
+    width: max-content;
+}
+
+.navbar a 
+{
+    text-decoration: none;
+    color: var(--main-bg-color);
+    font-weight: bold;
+}
+
+.navbar .active a
+{
+    color: var(--high-bg-color);
+}
+
+.navbar .active
+{
+    transition: 0.2s;
+    border-bottom: 3px solid var(--high-bg-color);
+}
+
+/* ===================================== */
+
+
+/* Bouton ============================== */
+.bouton-rdv 
+{
+    transition: 0.5s;
+    background: var(--high-bg-color);
+    width: max-content;
+    height: max-content;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.3));
+    cursor: pointer;
+}
+
+.bouton-rdv:hover 
+{
+    filter: none;
+}
+
+.bouton-rdv a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ===================================== */
