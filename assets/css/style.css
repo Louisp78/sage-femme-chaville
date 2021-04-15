@@ -231,7 +231,7 @@ body
     .qui
     {
         height: max-content;
-        padding-bottom: 5rem;
+        margin-bottom: 5rem;
     }
 
     .profil-card:nth-child(1)
@@ -269,6 +269,11 @@ body
         scroll-behavior: initial;
     }
 
+    .resum-text 
+    {
+        width: 100%;
+    }
+
 
 
 
@@ -283,4 +288,10 @@ body
     }
 
     /* ================================ */
+
+
+    .qui
+    {
+        margin-bottom: 7rem;
+    }
 } 
