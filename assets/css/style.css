@@ -65,9 +65,7 @@ body
 
 .resum-text p 
 {
-    font-family: 'Caveat';
     width: 87%;
-    font-size: 23px;
 }
 
 .resum img
@@ -135,8 +133,6 @@ body
 
 .profil-card p 
 {
-    font-family: 'Caveat';
-    font-size: 23px;
     width: 400px;
     margin: 3rem 0;
 }
@@ -171,7 +167,6 @@ body
 
 .echo p 
 {
-    font-family: 'Caveat';
     font-size: 25px;
     width: 70%;
 }
@@ -216,3 +211,76 @@ body
         position: static;
     }
 }
+
+@media (max-width: 1300px) 
+{
+    /* [SEC] Qui ======================== */
+
+    .qui h1
+    {
+        padding-left: 10%;
+    }
+
+    .wrapper-cards
+    {
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+
+    .qui
+    {
+        height: max-content;
+        padding-bottom: 5rem;
+    }
+
+    .profil-card:nth-child(1)
+    {
+        margin-right: initial;
+    }
+
+    .profil-card
+    {
+        margin: 2rem 0;
+    }
+    /* ================================ */
+}
+
+
+@media (max-width: 1000px)
+{
+    .echo p 
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    body
+    {
+        overflow-y: initial;
+    }
+
+    .container 
+    {
+        scroll-snap-type: initial;
+        overflow-y: initial;
+        scroll-behavior: initial;
+    }
+
+
+
+
+    /* [SEC]Echo ============================ */
+    .echo h1
+    {
+        padding-left: unset;
+    }
+    .echo 
+    {
+        margin-bottom: 4rem;
+    }
+
+    /* ================================ */
+} 

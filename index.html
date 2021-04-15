@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <script src="assets/js/map.js"></script>
+
     <title>Sarah - Valérie / Cabinet Chaville</title>
 </head>
 <body>
@@ -85,8 +87,30 @@
                     <li><p>la reconstitution 3D de l’utérus en coupe frontale, affinant le diagnostic de malformation utérine</p></li>
                 </ul>
             </div>
+            <div class="footer">
+                <div class="warpper">
+                    <div class="location-text">
+                        <div class="title">
+                            <img src="assets/img/location.png" alt="location">
+                            <h1>COMMENT NOUS TROUVER ?</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia suscipit consequatur voluptatibus consequuntur ut iusto recusandae dignissimos quam sit, deserunt molestiae vero iure et! Perspiciatis molestias placeat at ratione.</p>
+                    </div>
+
+                    <!--The div element for the map -->
+                    <div id="map"></div>
+
+                    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                    <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByPQ2F8BwBm3XGTyz0jziPBXC5A7jkiA4&callback=initMap&libraries=&v=weekly"
+                    async
+                    ></script>
+                </div>
+            </div>
         </section>
     </div> 
+
+
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 

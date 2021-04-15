@@ -42,6 +42,28 @@
     font-family: 'Caveat';
     font-size: 25px;
     width: 50%;
+    margin-left: 10%;
 }
 
 /* ===================================== */
+
+
+@media (max-width: 1400px)
+{
+    .actu .content
+    {
+        flex-direction: column;
+    }
+
+    .actu p 
+    {
+        margin-left: unset;
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .actu-item
+    {
+        align-items: center;
+    }
+}

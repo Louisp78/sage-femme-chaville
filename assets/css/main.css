@@ -46,6 +46,67 @@ h2
     font-size: 30px;
 }
 
+p 
+{
+    font-family: 'Caveat';
+    font-size: 23px;
+}
+
+.footer
+{
+    background-color: var(--main-bg-color);
+    height: 40vh;
+    width: 100%;
+
+    margin-top: 5rem;
+
+}
+
+.location-text 
+{
+    width: 40%;
+}
+
+.location-text h1
+{
+    color: white;
+
+}
+
+.location-text p 
+{
+    margin-top: 1rem;
+    width: 400px;
+    color: white;
+    margin-left: 6rem;
+}
+
+/* Map ============================ */
+#map {
+    height: 40vh;
+    width: 30%;
+  }
+
+.footer .warpper
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer .warpper .title 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .warpper .title img
+{
+    margin-right: 2.5rem;
+}
+
+  /* =============================== */
 
 /* NavBar ========================= */
 .navbar 
@@ -127,3 +188,59 @@ h2
 }
 
 /* ===================================== */
+
+@media (max-width: 1300px)
+{
+    .location-text 
+    {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 1000px)
+{
+    h1
+    {
+        font-size: 30px;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
+    p
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .footer
+    {
+        height: max-content;
+        padding: 2rem 0;
+        margin-top: 5rem;
+    }
+
+    .footer .warpper
+    {
+        flex-direction: column;
+    }
+
+    .location-text 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+
+    #map {
+        height: 40vh;
+        width: 70%;
+      }
+}
