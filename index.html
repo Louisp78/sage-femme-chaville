@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
-    </style> 
+    </style>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -15,8 +16,30 @@
 
     <title>Sarah - Valérie / Cabinet Chaville</title>
 </head>
+
 <body>
-    <div class="navbar">
+    <nav>
+        <!--<div class="logo">
+            <h4>The Nav</h4>
+        </div>-->
+        <ul class="nav-links">
+            <li>
+                <div class="bouton-rdv">
+                    <a href="#qui">Rendez-vous</a>
+                </div>
+            </li>
+            <li><a href="#notre-cabinet">Le cabinet</a></li>
+            <li><a href="#qui">Qui sommes nous ?</a></li>
+            <li><a href="#echo">Qu’est ce que l’échographie</a></li>
+            <li><a href="actu.html">Actualités</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!--<div class="navbar">
         <ul>
             <li>
                 <div class="bouton-rdv">
@@ -28,21 +51,22 @@
             <li><a href="#echo">Qu’est ce que l’échographie</a></li>
             <li><a href="actu.html">Actualités</a></li>
         </ul>
-    </div>
-    <div class="container">
-        <section class="child" id="notre-cabinet">
+    </div>-->
+    <div class="ctn container-active">
+        <section class="chl child-active" id="notre-cabinet">
             <div class="notre-cabinet">
                 <div class="resum">
                     <div class="resum-text">
                         <h1>NOTRE CABINET</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla. Phasellus at neque posuere, placerat augue ut, vulputate turpis. Duis vel risus vel ex congue egestas aliquam ac dolor. In ante nisi, interdum ac neque nec.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla. Phasellus at neque posuere, placerat
+                            augue ut, vulputate turpis. Duis vel risus vel ex congue egestas aliquam ac dolor. In ante nisi, interdum ac neque nec.</p>
                     </div>
                     <img src="assets/img/cabinet.png" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="child" id="qui">
+        <section class="chl child-active" id="qui">
             <div class="qui">
                 <h1>QUI SOMMES NOUS</h1>
                 <div class="wrapper-cards">
@@ -50,14 +74,14 @@
                         <div class="content">
                             <img src="assets/img/valérie.png" alt="">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla.
                             </p>
                             <div class="bouton-rdv">
                                 <a href="https://www.doctolib.fr/sage-femme/saint-cloud/valerie-place">Prendre rendez-vous</a>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                     <div class="profil-card">
                         <div class="content">
                             <img src="assets/img/sarah.png" alt="">
@@ -67,24 +91,38 @@
                                 <a href="https://www.doctolib.fr/sage-femme/saint-cloud/sarah-laruelle">Prendre rendez-vous</a>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="child" id="echo">
+        <section class="chl child-active" id="echo">
             <div class="echo">
                 <h1>QU'EST CE QUE L'ECHOGRAPHIE</h1>
                 <h2>L'ECHOGRAPHIE PELVIENNE PERMET DE :</h2>
                 <ul>
-                    <li><p>le bilan de la réserve ovarienne, idéalement entre le 2ème et le 5ème jour du cycle, avec le compte des follicules antraux (CFA)</p></li>
-                    <li><p>la recherche de kystes ovariens (endométriose, dermoïde, organique…)</p></li>
-                    <li><p>l’étude de l’ovulation par la présence d’un follicule dominant</p></li>
-                    <li><p>l’étude de la qualité de la muqueuse utérine, son épaisseur et sa vascularisation, idéalement aux alentours du 12-14ème jour du cycle</p></li>
-                    <li><p>l’évaluation morphologique de la cavité utérine avec la recherche de malformations utérines, d’éventuelles pathologies intra utérines tels que fibromes ou polypes …</p></li>
-                    <li><p>les mensurations de l’utérus</p></li>
-                    <li><p>la reconstitution 3D de l’utérus en coupe frontale, affinant le diagnostic de malformation utérine</p></li>
+                    <li>
+                        <p>le bilan de la réserve ovarienne, idéalement entre le 2ème et le 5ème jour du cycle, avec le compte des follicules antraux (CFA)</p>
+                    </li>
+                    <li>
+                        <p>la recherche de kystes ovariens (endométriose, dermoïde, organique…)</p>
+                    </li>
+                    <li>
+                        <p>l’étude de l’ovulation par la présence d’un follicule dominant</p>
+                    </li>
+                    <li>
+                        <p>l’étude de la qualité de la muqueuse utérine, son épaisseur et sa vascularisation, idéalement aux alentours du 12-14ème jour du cycle</p>
+                    </li>
+                    <li>
+                        <p>l’évaluation morphologique de la cavité utérine avec la recherche de malformations utérines, d’éventuelles pathologies intra utérines tels que fibromes ou polypes …</p>
+                    </li>
+                    <li>
+                        <p>les mensurations de l’utérus</p>
+                    </li>
+                    <li>
+                        <p>la reconstitution 3D de l’utérus en coupe frontale, affinant le diagnostic de malformation utérine</p>
+                    </li>
                 </ul>
             </div>
             <div class="footer">
@@ -101,17 +139,15 @@
                     <div id="map"></div>
 
                     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-                    <script
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByPQ2F8BwBm3XGTyz0jziPBXC5A7jkiA4&callback=initMap&libraries=&v=weekly"
-                    async
-                    ></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByPQ2F8BwBm3XGTyz0jziPBXC5A7jkiA4&callback=initMap&libraries=&v=weekly" async></script>
                 </div>
             </div>
         </section>
-    </div> 
+    </div>
 
 
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/navbar.js"></script>
 </body>
 
 <!--

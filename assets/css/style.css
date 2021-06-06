@@ -1,12 +1,16 @@
-body
-{
+body {
     overflow-y: hidden;
 }
 
 
 /* Slide Effect ======================== */
-.container
-{
+
+.container {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-active {
     flex-direction: column;
     height: 100vh;
     scroll-snap-type: y mandatory;
@@ -14,92 +18,89 @@ body
     scroll-behavior: smooth;
 }
 
-.child
-{
+.child {
     padding-top: 80px;
-    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.child-active {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+
 /* ===================================== */
 
-
-
-.notre-cabinet, .qui, .echo, .actu
-{
+.notre-cabinet,
+.qui,
+.echo,
+.actu {
     height: 100vh;
     width: 100%;
 }
 
 
 /* [SEC]Notre Cabinet ================== */
-.notre-cabinet 
-{
+
+.notre-cabinet {
     background: url(../img/bg1.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.resum-text 
-{
+.resum-text {
     position: relative;
     left: 530px;
     top: 200px;
-
     height: 450px;
     width: 410px;
-
     padding: 2rem 0 1rem 3rem;
-
     background-color: var(--basic-color);
     z-index: 2;
 }
 
-
-.resum-text h1
-{
+.resum-text h1 {
     margin-bottom: 1.5rem;
 }
 
-.resum-text p 
-{
+.resum-text p {
     width: 87%;
 }
 
-.resum img
-{
+.resum img {
     width: 710px;
     position: relative;
     left: 770px;
     bottom: 50px;
 }
+
+
 /* ===================================== */
 
 
 /* [SEC]Qui ============================ */
-.qui
-{
+
+.qui {
     background: url(../img/bg2.png);
     background-repeat: no-repeat;
     background-position: center;
-    
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.qui h1
-{
+.qui h1 {
     padding-left: 20%;
     padding-top: 3rem;
 }
 
-
-.wrapper-cards
-{
+.wrapper-cards {
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -107,191 +108,142 @@ body
     width: 70%;
 }
 
-.profil-card
-{
+.profil-card {
     position: relative;
     background-color: var(--basic-color);
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     padding: 4rem 7rem;
-    
 }
 
-.profil-card:nth-child(1)
-{
+.profil-card:nth-child(1) {
     margin-right: 5%;
 }
 
-.profil-card .content 
-{
+.profil-card .content {
     margin-left: 10%;
 }
 
-.profil-card p 
-{
+.profil-card p {
     width: 400px;
     margin: 3rem 0;
 }
 
+
 /* ===================================== */
+
 
 /* [SEC]Echo ============================ */
 
-.echo 
-{
+.echo {
     background: url(../img/bg3.png);
     background-repeat: no-repeat;
     background-position: center;
     padding-left: 5%;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-.echo h1 
-{
+.echo h1 {
     padding-left: 10%;
     padding-bottom: 8rem;
 }
 
-.echo h2 
-{
+.echo h2 {
     padding-bottom: 4rem;
 }
 
-.echo p 
-{
+.echo p {
     font-size: 25px;
     width: 70%;
 }
 
-.echo ul 
-{
+.echo ul {
     padding-left: 15px;
 }
 
-.echo li 
-{
+.echo li {
     margin: 1.5rem 0;
 }
+
 
 /* ===================================== */
 
 
-
-
 /* Responsive */
-@media (max-width: 1400px) 
-{
-    .navbar 
-    {
+
+@media (max-width: 1400px) {
+    .navbar {
         padding-left: 0;
     }
-
-    .resum img
-    {
+    .resum img {
         display: none;
     }
-
-    .resum
-    {
+    .resum {
         margin-top: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .resum-text
-    {
+    .resum-text {
         position: static;
     }
 }
 
-@media (max-width: 1300px) 
-{
+@media (max-width: 1300px) {
     /* [SEC] Qui ======================== */
-
-    .qui h1
-    {
+    .qui h1 {
         padding-left: 10%;
     }
-
-    .wrapper-cards
-    {
+    .wrapper-cards {
         flex-direction: column;
         width: 100%;
         height: max-content;
     }
-
-    .qui
-    {
+    .qui {
         height: max-content;
         margin-bottom: 5rem;
     }
-
-    .profil-card:nth-child(1)
-    {
+    .profil-card:nth-child(1) {
         margin-right: initial;
     }
-
-    .profil-card
-    {
+    .profil-card {
         margin: 2rem 0;
     }
     /* ================================ */
 }
 
-
-@media (max-width: 1000px)
-{
-    .echo p 
-    {
+@media (max-width: 1000px) {
+    .echo p {
         font-size: 20px;
     }
 }
 
-@media (max-width: 900px)
-{
-    body
-    {
+@media (max-width: 900px) {
+    body {
         overflow-y: initial;
     }
-
-    .container 
-    {
+    .container {
         scroll-snap-type: initial;
         overflow-y: initial;
         scroll-behavior: initial;
     }
-
-    .resum-text 
-    {
+    .resum-text {
         width: 100%;
     }
-
-
-
-
     /* [SEC]Echo ============================ */
-    .echo h1
-    {
+    .echo h1 {
         padding-left: unset;
     }
-    .echo 
-    {
+    .echo {
         margin-bottom: 4rem;
     }
-
     /* ================================ */
-
-
-    .qui
-    {
+    .qui {
         margin-bottom: 7rem;
     }
-} 
+}
