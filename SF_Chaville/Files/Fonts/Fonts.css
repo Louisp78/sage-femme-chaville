@@ -1,0 +1,72 @@
+@font-face {
+font-family: "Aclonica Regular";
+src: url("Aclonica Regular.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Aclonica Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Aclonica Regular.woff") format("woff"), /* Modern Browsers */
+     url("Aclonica Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Artesana";
+src: url("Artesana.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Artesana.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Artesana.woff") format("woff"), /* Modern Browsers */
+     url("Artesana.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Dker Poster";
+src: url("Dker Poster.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Dker Poster.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Dker Poster.woff") format("woff"), /* Modern Browsers */
+     url("Dker Poster.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Domestic Manners Regular";
+src: url("Domestic Manners Regular.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Domestic Manners Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Domestic Manners Regular.woff") format("woff"), /* Modern Browsers */
+     url("Domestic Manners Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Massa Bold";
+src: url("Massa Bold.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Massa Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Massa Bold.woff") format("woff"), /* Modern Browsers */
+     url("Massa Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Massa";
+src: url("Massa.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Massa.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Massa.woff") format("woff"), /* Modern Browsers */
+     url("Massa.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Ubuntu Italic";
+src: url("Ubuntu Italic.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Ubuntu Italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Ubuntu Italic.woff") format("woff"), /* Modern Browsers */
+     url("Ubuntu Italic.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Ubuntu Regular";
+src: url("Ubuntu Regular.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Ubuntu Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Ubuntu Regular.woff") format("woff"), /* Modern Browsers */
+     url("Ubuntu Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
