@@ -59,6 +59,10 @@ span {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     overflow-x: hidden;
 }
@@ -300,10 +304,10 @@ nav .active {
 }
 
 .bouton-rdv:hover {
-    filter: none;
+    filter: unset;
 }
 
-.bouton-rdv a {
+.bouton-rdv span {
     text-decoration: none;
     color: white;
     font-weight: bold;
