@@ -1,69 +1,72 @@
-
-/* [SEC]Actu =========================== */
-
-
-.actu 
-{
-    padding-top: 10rem;
-}
-
-.actu-item
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 80%;
-    margin: 17rem 10%;
-}
-
-.actu-item:nth-child(1)
-{
-    margin: 0rem 10%;
-}
-
-.actu .content 
-{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.actu span
-{
-    color: var(--high-bg-color);
-    font-weight: bold;
+    /* [SEC]Actu =========================== */
     
-}
-
-.actu p 
-{
-    font-family: 'Caveat';
-    font-size: 25px;
-    width: 50%;
-    margin-left: 10%;
-}
-
-/* ===================================== */
-
-
-@media (max-width: 1400px)
-{
-    .actu .content
-    {
+    .actu {
+        padding-top: 10rem;
+    }
+    
+    .actu-item {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
         flex-direction: column;
-    }
-
-    .actu p 
-    {
-        margin-left: unset;
-        margin-top: 2rem;
         width: 80%;
+        margin: 0 0 5% 10%;
     }
-
-    .actu-item
-    {
+    
+    .actu .content {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
-}
+    
+    .actu .content img {
+        max-height: 300px;
+    }
+    
+    .actu span {
+        color: var(--high-bg-color);
+        font-weight: bold;
+    }
+    
+    .actu p {
+        font-family: 'Caveat';
+        font-size: 25px;
+        width: 50%;
+        margin-left: 10%;
+    }
+    /* ===================================== */
+    
+    @media (max-width: 1400px) {
+        .actu .content {
+            flex-direction: column;
+        }
+        .actu .content img {
+            width: 65%;
+        }
+        .actu p {
+            margin-left: 0;
+            margin-top: 2rem;
+            width: 70%;
+            text-align: center;
+            font-size: 23px;
+        }
+        .actu-item {
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .actu p {
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .actu p {
+            width: 90%;
+        }
+        .actu .content img {
+            width: 80%;
+        }
+    }

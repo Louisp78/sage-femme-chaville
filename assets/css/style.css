@@ -1,47 +1,19 @@
-body {
-    overflow-y: hidden;
-}
-
-
-/* Slide Effect ======================== */
-
-.container {
-    flex-direction: column;
-    height: 100vh;
-}
-
-.container-active {
-    flex-direction: column;
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
-.child {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.child-active {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    scroll-snap-align: start;
-}
-
-
-/* ===================================== */
-
 .notre-cabinet,
 .qui,
 .echo,
 .actu {
+    min-height: 1000px;
     height: 100vh;
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .notre-cabinet,
+    .qui,
+    .echo,
+    .actu {
+        height: max-content;
+    }
 }
 
 
@@ -73,10 +45,48 @@ body {
 }
 
 .resum img {
-    width: 710px;
+    width: 400px;
     position: relative;
-    left: 770px;
+    left: 1000px;
     bottom: 50px;
+}
+
+
+/* Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 1400px) {
+    .resum img {
+        display: none;
+    }
+    .resum {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resum-text {
+        position: static;
+    }
+}
+
+@media (max-width: 1300px) {
+    .resum-text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .resum-text {
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    .resum-text {
+        width: 100%;
+        height: max-content;
+        padding: 10%;
+    }
 }
 
 
@@ -105,7 +115,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 80%;
+    height: max-content;
 }
 
 .profil-card {
@@ -115,7 +126,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 4rem 7rem;
+    /*width: 45%;*/
+    padding: 4rem 4rem;
 }
 
 .profil-card:nth-child(1) {
@@ -127,8 +139,60 @@ body {
 }
 
 .profil-card p {
-    width: 400px;
-    margin: 3rem 0;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.profil-card img {
+    border-radius: 50%;
+}
+
+
+/* Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 1300px) {
+    .qui h1 {
+        padding-left: 10%;
+    }
+    .wrapper-cards {
+        flex-direction: column;
+        width: 70%;
+        height: max-content;
+    }
+    .qui {
+        height: max-content;
+        margin-bottom: 5rem;
+    }
+    .profil-card:nth-child(1) {
+        margin-right: initial;
+    }
+    .profil-card {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .qui {
+        margin-bottom: 7rem;
+    }
+    .wrapper-cards {
+        width: 70%;
+    }
+    .profil-card {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .wrapper-cards {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profil-card {
+        padding: 4rem 0.5rem;
+    }
 }
 
 
@@ -171,51 +235,7 @@ body {
 }
 
 
-/* ===================================== */
-
-
-/* Responsive */
-
-@media (max-width: 1400px) {
-    .navbar {
-        padding-left: 0;
-    }
-    .resum img {
-        display: none;
-    }
-    .resum {
-        margin-top: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .resum-text {
-        position: static;
-    }
-}
-
-@media (max-width: 1300px) {
-    /* [SEC] Qui ======================== */
-    .qui h1 {
-        padding-left: 10%;
-    }
-    .wrapper-cards {
-        flex-direction: column;
-        width: 100%;
-        height: max-content;
-    }
-    .qui {
-        height: max-content;
-        margin-bottom: 5rem;
-    }
-    .profil-card:nth-child(1) {
-        margin-right: initial;
-    }
-    .profil-card {
-        margin: 2rem 0;
-    }
-    /* ================================ */
-}
+/* Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (max-width: 1000px) {
     .echo p {
@@ -223,27 +243,14 @@ body {
     }
 }
 
-@media (max-width: 900px) {
-    body {
-        overflow-y: initial;
-    }
-    .container {
-        scroll-snap-type: initial;
-        overflow-y: initial;
-        scroll-behavior: initial;
-    }
-    .resum-text {
-        width: 100%;
-    }
-    /* [SEC]Echo ============================ */
+@media (max-width: 1024px) {
     .echo h1 {
         padding-left: unset;
     }
     .echo {
         margin-bottom: 4rem;
     }
-    /* ================================ */
-    .qui {
-        margin-bottom: 7rem;
-    }
 }
+
+
+/* ===================================== */

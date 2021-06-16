@@ -1,7 +1,6 @@
 /* Variable ============================== */
 
-:root
-{
+:root {
     --main-bg-color: #C47254;
     --title-color: #CD5D1E;
     --subtitle-color: #F35800;
@@ -12,149 +11,191 @@
 
 
 /* Dker Poster font */
-@font-face {font-family: "Dker"; src: url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.eot"); src: url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.woff") format("woff"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.svg#Dker") format("svg"); } 
+
+@font-face {
+    font-family: "Dker";
+    src: url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.eot");
+    src: url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.woff") format("woff"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3909e56c973d5ca300b192de3a05d32d.svg#Dker") format("svg");
+}
+
 
 /* ======================================= */
 
-* 
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body
-{
-    font-family: 'Nunito', sans-serif; /*Tahoma, Geneva, Verdana, sans-serif;*/
+body {
+    font-family: 'Nunito', sans-serif;
+    /*Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
-h1, h2, h3 
-{
+h1,
+h2,
+h3 {
     font-family: 'Dker';
     font-weight: 500;
 }
 
-h1 
-{
+h1 {
     color: var(--title-color);
     font-size: 40px;
 }
 
-h2 
-{
+h2 {
     color: var(--subtitle-color);
     font-size: 30px;
 }
 
-p 
-{
+p {
     font-family: 'Caveat';
     font-size: 23px;
 }
 
-.footer
-{
-    background-color: var(--main-bg-color);
-    height: 40vh;
+span {
+    color: var(--subtitle-color);
+    font-weight: bold;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+section {
     width: 100%;
-
-    margin-top: 5rem;
-
 }
 
-.location-text 
-{
-    width: 40%;
-}
-
-.location-text h1
-{
+.location-text h1 {
     color: white;
-
 }
 
-.location-text p 
-{
+.location-text p {
     margin-top: 1rem;
     width: 400px;
     color: white;
     margin-left: 6rem;
 }
 
+
 /* Map ============================ */
+
 #map {
+    min-height: 400px;
     height: 40vh;
-    width: 30%;
-  }
+    width: 40%;
+    min-width: 350px;
+}
 
-.footer .warpper
-{
+
+/* =============================== */
+
+.footer {
+    min-width: 100%;
+    background-color: var(--main-bg-color);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    height: max-content;
+    padding: 0 10%;
 }
 
-.footer .warpper .title 
-{
+.footer .title {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.footer .warpper .title img
-{
-    margin-right: 2.5rem;
-}
-
-  /* =============================== */
-
-/* NavBar ========================= */
-nav 
-{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    background: white;
-    min-height: 80px;
-
-    z-index: 3;
-}
-
-nav ul
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-}
-
-nav li 
-{
-    margin: 0 2rem;
     width: max-content;
 }
 
-nav .active a
-{
+.footer .title img {
+    margin-right: 2.5rem;
+    width: 45px;
+    height: 50px;
+}
+
+
+/* Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3% 0;
+    }
+    .footer .location-text {
+        margin-bottom: 2%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .location-text p {
+        text-align: center;
+        margin: 1rem 0;
+        width: 50%;
+    }
+    .footer .location-text h1 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer .location-text p {
+        text-align: center;
+        margin: 1rem 0;
+        width: 70%;
+    }
+    .footer .location-text h1 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer .title img {
+        display: none;
+        margin: 0;
+    }
+    .footer .location-text h1 {
+        width: 100%;
+    }
+}
+
+
+/* =============================== */
+
+
+/* NavBar ========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    z-index: 3;
+}
+
+nav .active a {
     color: var(--high-bg-color);
 }
 
-nav .active
-{
+nav .active {
     transition: 0.2s;
     border-bottom: 3px solid var(--high-bg-color);
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
 }
 
 .nav-links li {
+    margin: 0 2rem;
     list-style: none;
 }
 
@@ -166,7 +207,7 @@ nav .active
 
 .burger {
     display: none;
-    margin-left: 3%;
+    margin: 7px 0 0 20px;
 }
 
 .burger div {
@@ -175,45 +216,6 @@ nav .active
     background-color: var(--high-bg-color);
     margin: 5px;
     transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-    
-    .nav-links {
-        position: fixed;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #5D4954;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    
-    .nav-links li {
-        opacity: 0;
-    }
-    
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-}
-
-.nav-active {
-        transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
@@ -239,12 +241,52 @@ nav .active
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+
+/* Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 100vh;
+        top: 80px;
+        background-color: var(--basic-color);
+        display: flex;
+        padding: 20vh 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+        margin: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-links {
+        width: 100%;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
 /* ===================================== */
 
 
 /* Bouton ============================== */
-.bouton-rdv 
-{
+
+.bouton-rdv {
     transition: 0.5s;
     background: var(--high-bg-color);
     width: max-content;
@@ -253,81 +295,41 @@ nav .active
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.3));
+    filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.3));
     cursor: pointer;
 }
 
-.bouton-rdv:hover 
-{
+.bouton-rdv:hover {
     filter: none;
 }
 
-.bouton-rdv a 
-{
+.bouton-rdv a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 18px;
 }
 
+
 /* ===================================== */
 
-@media (max-width: 1300px)
-{
-    .location-text 
-    {
-        width: 60%;
-    }
-    .footer
-    {
-        width: 100%;
-    }
-}
 
+/* Responsive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media (max-width: 1000px)
-{
-    h1
-    {
+@media screen and (max-width: 1024px) {
+    h1 {
         font-size: 30px;
     }
-    h2
-    {
-        font-size: 20px;
-    }
-    p
-    {
+    h2 {
         font-size: 20px;
     }
 }
 
-@media (max-width: 900px)
-{
-    .footer
-    {
-        height: max-content;
-        padding: 2rem 0;
-        margin-top: 5rem;
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 23px;
     }
-
-    .footer .warpper
-    {
-        flex-direction: column;
+    h2 {
+        font-size: 13px;
     }
-
-    .location-text 
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 2rem 0;
-        width: 100%;
-    }
-
-
-    #map {
-        height: 40vh;
-        width: 70%;
-      }
 }

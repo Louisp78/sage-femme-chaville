@@ -2,6 +2,16 @@
 <html lang="fr">
 
 <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +21,8 @@
     </style>
     <link rel="stylesheet" href="assets/css/actu.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="assets/js/map.js"></script>
 
     <title>Sarah - Valérie / Cabinet Chaville</title>
 </head>
@@ -23,13 +35,13 @@
         <ul class="nav-links">
             <li>
                 <div class="bouton-rdv">
-                    <a href="#qui">Rendez-vous</a>
+                    <a href="index.html#qui">Rendez-vous</a>
                 </div>
             </li>
-            <li><a href="#notre-cabinet">Le cabinet</a></li>
-            <li><a href="#qui">Qui sommes nous ?</a></li>
-            <li><a href="#echo">Qu’est ce que l’échographie</a></li>
-            <li><a href="actu.html">Actualités</a></li>
+            <li><a href="index.html#notre-cabinet">Le cabinet</a></li>
+            <li><a href="index.html#qui">Qui sommes nous ?</a></li>
+            <li><a href="index.html#echo">Qu’est ce que l’échographie</a></li>
+            <li><a href="#">Actualités</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -37,41 +49,38 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <!--<div class="navbar">
-        <ul>
-            <li>
-                <div class="bouton-rdv">
-                    <a href="index.html#qui">Rendez-vous</a>
+    <div class="wrapper">
+        <div class="actu">
+            <!--Ajouter une <div class="actu-item"></div> pour chaque actu-->
+            <div class="actu-item">
+                <h1>VOTRE CABINET RESTE OUVERT TOUT L'ÉTÉ</h1>
+                <span>Posté le 16 juin 2021</span>
+                <div class="content">
+                    <img src="assets/img/actu-2.jpg" alt="">
+                    <p>Le cabinet d'échographie ouvre ses portes à partir du 21 juin 2021 et restera ouvert tout l'été.</p>
                 </div>
-            </li>
-            <li><a href="index.html#notre-cabinet">Le cabinet</a></li>
-            <li><a href="index.html#qui">Qui sommes nous ?</a></li>
-            <li><a href="index.html#echo">Qu’est ce que l’échographie</a></li>
-            <li class="active"><a href="#">Actualités</a></li>
-        </ul>
-    </div>-->
-
-
-    <div class="actu">
-        <!--Ajouter une <div class="actu-item"></div> pour chaque actu-->
-        <div class="actu-item">
-            <h1>VOTRE CABINET RESTE OUVERT POUR NOEL</h1>
-            <span>Posté le 20 décembre 2021</span>
-            <div class="content">
-                <img src="assets/img/actu-example.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla.</p>
             </div>
         </div>
-        <div class="actu-item">
-            <h1>VOTRE CABINET RESTE OUVERT POUR NOEL</h1>
-            <span>Posté le 20 décembre 2021</span>
-            <div class="content">
-                <img src="assets/img/actu-example.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu euismod ligula. Nam eget cursus purus, a consequat metus. Proin cursus libero sit amet nibh facilisis maximus id quis nulla.</p>
+        <div class="footer">
+            <!--<div class="warpper">-->
+            <div class="location-text">
+                <div class="title">
+                    <img src="assets/img/location.png" alt="location">
+                    <h1>COMMENT NOUS TROUVER ?</h1>
+                </div>
+                <p>Notre cabinet vous accueille à Chaville, à proximité de l'église et du Monoprix, au <b> 1 rue Albert 1er (bâtiment L).</b></p>
             </div>
+
+            <!--The div element for the map -->
+            <div id="map"></div>
+
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByPQ2F8BwBm3XGTyz0jziPBXC5A7jkiA4&callback=initMap&libraries=&v=weekly" async></script>
+            <!--</div>-->
         </div>
     </div>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/navbar.js"></script>
 </body>
 
 </html>
